@@ -27,10 +27,10 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-code about-icon"></span>
-  I am interested in Computer vision, machine learning, and automation. I am exploring differnt techniques by which we can mitigate the shot comings of supervised learning such as 
+  I am interested in Computer vision, machine learning, and automation. I am exploring differnt techniques by which we can mitigate the shot comings of supervised learning. I am especially interested in real-time inference generation and active learning.
 </p>
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I did an internship at <b>Agricx Labs, Mumbai</b> in May 2019, worked in the AI team.
+  I did an internship at <b>Agricx Labs, Mumbai</b> in May 2017, worked in the AI team.
 </p>
