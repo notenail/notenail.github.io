@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deep Learning vs Computer Vision"
-description: Deep Learning vs Computer Vision
+description: My thoughts on the debate of computer vision vs deep learning.
 # image: /files/blog/gibbs/front.jpg
 date: 2019-05-21
 categories: post
@@ -34,7 +34,7 @@ Sometimes we have a plethora of data and if the application is simple enough, we
 
 Nevertheless, I have to tell you that deep learning is an essential tool for any data scientist today, irrespective of the field that they are working. But here’s a thing about deep learning,
 
-## Deep Learning is not the course you took online!
+## Deep Learning is not only the course you took online!
 
 The first thing that I notice while hiring for the role of a data scientist or computer vision is the projects that the candidates have done. Usually, an applicant’s CV is full of courses offered by the University of the internet. That is actually quite fine as I personally would have not been in this particular field if it wasn’t for the internet. However, once a candidate has finished a certificate course, they start applying for companies as a data scientist. This should not be the case. What potential employers would like to see is a solid project other than that of the online course. We are fortunate enough to be living in an extremely data-rich era. Find one that interests you and try to make inferences based on the knowledge you have.
 
