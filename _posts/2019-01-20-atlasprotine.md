@@ -1,6 +1,8 @@
 ---
 title: "Atlas Human Protein Classification"
 start: 2019-01-20
+end: 2019-03-20
+
 categories: project
 tags: [Computer Vision, Deep learning, Bio-medical]
 demo: https://www.kaggle.com/nikhilpandey360/rgby-adam-sigmoid-500-10-ep-10-inception
