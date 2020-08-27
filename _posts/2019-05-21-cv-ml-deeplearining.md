@@ -3,7 +3,7 @@ layout: post
 title: "Deep Learning vs Computer Vision"
 description: Deep Learning vs Computer Vision
 # image: /files/blog/gibbs/front.jpg
-date: 2020-05-21
+date: 2019-05-21
 categories: post
 tags: [Blog, Computer Vision, Machine Learning, Deep Learning]
 ---
