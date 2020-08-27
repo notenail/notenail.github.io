@@ -1,3 +1,4 @@
-notenail.github.io
-=====================
-Will try my best to keep it up to date.
+# Personal Website
+My personal website hosted on GitHub.
+
+Theme taken from <a href="https://deanattali.com/beautiful-jekyll/">beautiful jekyll</a>.

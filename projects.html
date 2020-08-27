@@ -1,0 +1,71 @@
+---
+layout: page
+title: Projects
+subtitle: Things I'm working/worked upon
+use-site-title: true
+---
+
+<div>
+
+{% for project in site.categories.project %}
+     
+<article class="post-preview">
+    
+	  <h2 class="post-title">{{ project.title }}</h2>
+
+	  {% if project.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ project.subtitle }}
+	  </h3>
+	  {% endif %}
+    
+
+    <p class="post-meta">
+      {% if project.end != empty %}
+	 {{ project.start | date: "%B, %Y" }} - {{ project.end | date: "%B, %Y" }}
+      {% else %}
+         {{ project.start | date: "%B, %Y" }}
+      {% endif %}
+    </p>
+
+    <div class="post-entry-container">
+      {% if project.image %}
+      <div class="post-image">
+          <img src="{{ project.image | relative_url }}">      
+      </div>
+      {% endif %}
+      <div class="post-entry">
+        {{ project.content }}
+      </div>
+    </div>
+    <div>
+	{% if project.demo %}
+
+          <a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer" class="fa fa-external-link about-icon fa-3x" title="Demo of {{ project.title }}" style="margin:20px"></a>
+	
+      	{% endif %}
+	{% if project.code %} 
+
+<a href="{{ project.code }}" target="_blank" rel="noopener noreferrer" class="fa fa-github about-icon fa-3x" title="Code of {{ project.title }}"></a> 
+
+	{% endif %}
+    </div>
+
+   {% if project.tags.size > 0 %}
+    <div class="blog-tags">
+      Tags:
+      {% if site.link-tags %}
+      {% for tag in project.tags %}
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+      {% else %}
+        {{ project.tags | join: ", " }}
+      {% endif %}
+    </div>
+    {% endif %}
+
+   </article>
+  
+{% endfor %} 
+</div>
+
