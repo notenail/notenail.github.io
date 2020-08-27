@@ -27,7 +27,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-code about-icon"></span>
-  I am interested in Computer vision, machine learning, and automation. I am exploring differnt techniques by which we can mitigate the shot comings of supervised learning. I am especially interested in real-time inference generation and active learning.
+  I am interested in Computer vision, machine learning, and automation. I am exploring differnt techniques by which we can mitigate the short-comings of supervised learning. I am especially interested in real-time inference generation and active learning.
 </p>
 
 <p class="about-text">

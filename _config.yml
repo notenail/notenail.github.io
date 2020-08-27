@@ -11,7 +11,6 @@ description: My personal website.
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://mr-easy.github.io"
 
 # baseurl should be an empty string
 #baseurl: ""
@@ -118,7 +117,6 @@ url-pretty: "notenail.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: "rishabh-gupta"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
