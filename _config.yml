@@ -93,12 +93,12 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "mr-easy.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "notenail.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: "UA-101604185-1"
+# gtag: "UA-101604185-1"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
@@ -118,7 +118,7 @@ gtag: "UA-101604185-1"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "rishabh-gupta"
+# disqus: "rishabh-gupta"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
