@@ -12,13 +12,13 @@ I am compelled to write this post due to the various trends that I observed and 
 
 First, about me. I work as a Data Scientist in a start-up whose domain is Agricultural technology. We are developing algorithms that, simply put, can analyze the pictures such as below and analyze the product on various parameters such as shape, size, color, sugar contents, etc. Our data is primarily based on images and videos containing the concerning crop/product. I am writing this post to help and at many points it might feel like a rant against deep learning, however, if you make it all the way though, you’d get to know what I mean by the following headline.
 
-<img src="{{ site.url }}/img/objects.png" width="100%">
+<img src="{{ site.url }}/img/objects.png" width="50%">
 
 ## Computer Vision is not Deep Learning 
 
 I had to reject a ton of candidates who applied some deep learning off the shelf algorithms such as yolo or mobilenet on images and videos. I have fairly recent and the relevant experience of computer vision and I can tell you that deep learning is not computer vision. You can create a pipeline of an ML algorithm without knowing the basic principles and algorithms in computer vision and it will work wonderfully. But that is exactly what you would have created. How would you go about processing the inferences? And even more relevant, why did you create that pipeline in the first place? Was it even necessary to introduce a deep learning overhead in an application such as object detection? I know what you are thinking. Object detection and deep learning goes hand in hand. The statement is quite alright but deep learning is not the only way to perform such task and more often than not, it’s not necessary to use a deep learning algorithm.
 
-<img src="{{ site.url }}/img/gpu.png" width="100%">
+<img src="{{ site.url }}/img/gpu.png" width="50%">
 
 In the real world of computer vision, you’d be surprised to know that most of the applications that involve object detection can be handled by a good computer vision library containing old school algorithms like Haar-feature detection or Histogram of gradients . You don’t even need to introduce deep learning in cases where say you have a belt on which a certain type of object has to be detected.
 
@@ -44,7 +44,7 @@ Most of the candidates I have screened don’t even have a kaggle profile. I vis
 
 Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to effectively perform a specific task without using explicit instructions, relying on patterns and inference instead. Please understand this statement.
 
-<img src="{{ site.url }}/img/blog1.png" width="100%">
+<img src="{{ site.url }}/img/blog1.png" width="50%">
 
 
 Deep learning is an over-simplified word which is used to categorise the family of neural networks with tens of hidden layers more as compared to conventional ANNs. That’s all it is. It is NOT equivalent to machine learning. In reality, it is a small subset of machine learning. A data scientist with the sole experience of deep learning is not the perfect data scientist. In fact, in our hiring process, that person won’t even qualify as a data scientist. There is also a great deal of misinformation online about machines thinking and making decisions as humans do, which is incredibly misleading and ultimately untrue.
