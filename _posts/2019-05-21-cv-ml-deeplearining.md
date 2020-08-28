@@ -58,4 +58,6 @@ Finally, if you want to start your career as a data scientist working in compute
 - Statistics: Pandas, scipy
 - Deep Learning: Keras
 
-To learn introductory image processing you can start this mini tutorial series by wonderful sentdex. For advance learners, I would recommend this course, it is really good and tbh, quite interesting. Good Luck!
+To learn introductory image processing you can start this mini tutorial series by wonderful sentdex. For advance learners, I would recommend Aaron Bobick's through course "Introduction to computer vision" on udacity as it is really good and quite interesting. 
+
+Good Luck!
