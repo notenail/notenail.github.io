@@ -3,7 +3,7 @@ title: "The Agrograde App"
 start: 2019-07-05
 end : 
 categories: project
-tags: [computer vision, cloud computing]
+tags: [Computer Vision, Cloud Computing]
 demo: https://www.youtube.com/watch?v=4lrRBFrWKDU
 image: /img/projects/tomato.jpeg
 ---
