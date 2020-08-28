@@ -97,7 +97,7 @@ url-pretty: "notenail.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-# gtag: "UA-101604185-1"
+gtag: "UA-132428073-2"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
