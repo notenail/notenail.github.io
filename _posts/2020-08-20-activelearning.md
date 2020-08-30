@@ -40,10 +40,62 @@ models = [clf_ovo, clf_Linear]
 models = [clf.fit(X, Y) for clf in models]
 ```
 
-The fitting of the models is shown below.
-<img src="{{ site.url }}/img/projects/active-lr/supervised_svms.png" width="100%">
- 
+The fitting of the models is shown below.<img src="{{ site.url }}/img/projects/active-lr/supervised_svms.png" width="100%">
+
+## Active learning
+
+Break out a small part of dataset as pool. We will be training on pool which is a much smaller subset of the main dataset.
+```
+from sklearn.model_selection import train_test_split
+X_pool, X_test, y_pool, y_test = train_test_split(X, Y, test_size=0.6, random_state=6)
+
+``` 
+### The Oracle
+
+The job of oracle is to label the data points that the model is most uncertain on. Since we are using svm classifiers, we can use sklearn's ```decision_function``` in order to get uncertainity on data points. 
+
+```
+def getdatapoint4activelearning(clf,pts):
+    idxs = []
+    for clf in clfs:
+        decisions = (np.abs(list(clf.decision_function((X_pool.reset_index(drop=True))[min(pts):max(pts)]))))
+        idx = np.argmin(np.array(decisions),axis=0)
+        idxs.append(idx)
+    return idxs
+```
+
+Now we are going to repeat the following steps:
+ - Train svm on 10 random points from pool.
+ - Find the most uncertain points from the remaining points in pool.
+ - Add it to training sample (optional: you can add a few more data points along with the uncertain points)
+ - Repeat
+
+```
+import random
+
+begining_thesh = 5 #initial observation
+idxs = list(random.sample(range(0, len(X_pool)), begining_thesh))
+ambigious_pts = None
+clfs_combo = models()
+
+for i in range(10):
+
+    clfs = clfs_combo.fit(X_pool,y_pool,idxs)
+    unknown_idxs = [i for i in range(len(X_pool)) if i not in idxs]
+    idxs = plot_svm_amb(idxs, models=clfs,ambigious=ambigious_pts)
+    ambigious_pts = getdatapoint4activelearning(clfs,unknown_idxs)
+
+```  
+
+As you can below, the data points denoted as star are the points that the model is most uncertain about. As we add these points, the latest model generalise better than previous models.
 
 
+
+<img src="{{ site.url }}/img/projects/active-lr/active_learning_svm.gif" width="100%">
+
+
+Note: If it isn't clear, here we have trained 10 different models with each model getting trained on points that the previous model was confused about.
+
+In the next part, I'll dive deeper into the pipeline design for active learning in computer vision. 
  
 
