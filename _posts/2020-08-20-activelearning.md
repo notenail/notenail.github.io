@@ -14,6 +14,10 @@ Supervised learning is great. You provide data and labels and the model will be 
 
 Active learning is a machine learning technique in which the models can interactively query a user (usually referred to as an oracle) to label new data points. To be clear, active learning does in fact require labeled data. The difference between active learning and supervised learning is that the data requirements comparatively tends to be a fraction of the later. Active learning falls in the category of semi-supervised learning.
 
+Please refer to my <a href="https://www.kaggle.com/nikhilpandey360/active-learning-on-structured-dataset" target="_blank" rel="noopener noreferrer" style="color:blue">kaggle notebook</a> for the complete code.
+
+
+
 # Dataset
 We are going to use the Iris dataset which has 3 values as the target variable that depends on 4 independent variables. Now, for the sake of easy visualization, I am only going to use 2 variables to train SVM classifiers. We are going to train on two different types of SVM kernels.  
 
