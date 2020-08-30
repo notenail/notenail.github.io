@@ -15,10 +15,9 @@ Supervised learning is great. You provide data and labels and the model will be 
 Active learning is a machine learning technique in which the models can interactively query a user (usually referred to as an oracle) to label new data points. To be clear, active learning does in fact require labeled data. The difference between active learning and supervised learning is that the data requirements comparatively tends to be a fraction of the later. Active learning falls in the category of semi-supervised learning.
 
 # Dataset
-We are going to use Iris dataset which has 3 values as target that depends on 4 variables. Now, for the sake of easy visualization, I am only going to use 2 variables to train SVM classifiers. We are going to train on two different type of SVM kernels.   
+We are going to use the Iris dataset which has 3 values as the target variable that depends on 4 independent variables. Now, for the sake of easy visualization, I am only going to use 2 variables to train SVM classifiers. We are going to train on two different types of SVM kernels.  
 
 
-### Dataset preprocessing 
 ```
 
 f1, f2, target = 'petal_length','petal_width', 'species'
@@ -44,31 +43,31 @@ The fitting of the models is shown below.<img src="{{ site.url }}/img/projects/a
 
 ## Active learning
 
-Break out a small part of dataset as pool. We will be training on pool which is a much smaller subset of the main dataset.
+Break out a small part of the dataset as the pool. We will be training on the pool which is a much smaller subset of the main dataset.
 ```
 from sklearn.model_selection import train_test_split
 X_pool, X_test, y_pool, y_test = train_test_split(X, Y, test_size=0.6, random_state=6)
 
-``` 
+```
 ### The Oracle
 
-The job of oracle is to label the data points that the model is most uncertain on. Since we are using svm classifiers, we can use sklearn's ```decision_function``` in order to get uncertainity on data points. 
+The job of the oracle is to label the data points that the model is most uncertain on. Since we are using SVM classifiers, we can use sklearn's ```decision_function``` in order to get uncertainty on data points.
 
 ```
 def getdatapoint4activelearning(clf,pts):
-    idxs = []
-    for clf in clfs:
-        decisions = (np.abs(list(clf.decision_function((X_pool.reset_index(drop=True))[min(pts):max(pts)]))))
-        idx = np.argmin(np.array(decisions),axis=0)
-        idxs.append(idx)
-    return idxs
+   idxs = []
+   for clf in clfs:
+       decisions = (np.abs(list(clf.decision_function((X_pool.reset_index(drop=True))[min(pts):max(pts)]))))
+       idx = np.argmin(np.array(decisions),axis=0)
+       idxs.append(idx)
+   return idxs
 ```
 
 Now we are going to repeat the following steps:
- - Train svm on 10 random points from pool.
- - Find the most uncertain points from the remaining points in pool.
- - Add it to training sample (optional: you can add a few more data points along with the uncertain points)
- - Repeat
+- Train SVMs on the subset of random points from the pool.
+- Find the most uncertain points from the remaining points in the pool.
+- Add it to training sample (optional: you can add a few more data points along with the uncertain points)
+- Repeat
 
 ```
 import random
@@ -80,22 +79,20 @@ clfs_combo = models()
 
 for i in range(10):
 
-    clfs = clfs_combo.fit(X_pool,y_pool,idxs)
-    unknown_idxs = [i for i in range(len(X_pool)) if i not in idxs]
-    idxs = plot_svm_amb(idxs, models=clfs,ambigious=ambigious_pts)
-    ambigious_pts = getdatapoint4activelearning(clfs,unknown_idxs)
+   clfs = clfs_combo.fit(X_pool,y_pool,idxs)
+   unknown_idxs = [i for i in range(len(X_pool)) if i not in idxs]
+   idxs = plot_svm_amb(idxs, models=clfs,ambigious=ambigious_pts)
+   ambigious_pts = getdatapoint4activelearning(clfs,unknown_idxs)
 
-```  
+``` 
 
-As you can below, the data points denoted as star are the points that the model is most uncertain about. As we add these points, the latest model generalise better than previous models.
-
-
-
-<img src="{{ site.url }}/img/projects/active-lr/active_learning_svm.gif" width="100%">
+As you can below, the data points denoted as a star are the points that the model is most uncertain about. As we add these points, the latest model generalizes better than previous models.<img src="{{ site.url }}/img/projects/active-lr/active_learning_svm.gif" width="100%">
 
 
-Note: If it isn't clear, here we have trained 10 different models with each model getting trained on points that the previous model was confused about.
+If it isn't clear, here we have trained 10 different models with each model getting trained on points that the previous model was confused about. Even though I haven't bothered about the accuracy of the model as the point of the post is to demonstrate the methodology, you can see that the models are able to generalize with a much smaller dataset and that's exactly the point of active learning. I have still not been able to answer the question of whether active learning yields better models than supervised learning. I guess that's something I'll update after further experimentation on a much more complex dataset.
 
-In the next part, I'll dive deeper into the pipeline design for active learning in computer vision. 
+In the next part, I'll dive deeper into the pipeline design for active learning in computer vision.
+
+
  
 
