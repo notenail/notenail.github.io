@@ -77,7 +77,7 @@ y = np.concatenate((y_train,y_test),axis=0)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 ```
-Notice that I have set apart 33% for dataset for testing for unbaised evaluation. We will never mix this subset of the dataset with anything.
+Notice that I have set apart 33% for dataset for testing intened for unbaised evaluation. We will never mix this subset of the dataset with anything.
 
 
 
