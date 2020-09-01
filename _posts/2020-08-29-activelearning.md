@@ -89,7 +89,7 @@ history = model.fit(x=X_train,y=y_train, epochs=epochs, validation_split=0.1,ver
 _,testing_accuracy = model.evaluate(X_test, y_test,verbose=False)
 
 ```
-<img src="{{ site.url }}/img/projects/active-lr/supervised.png" width="100%">
+<img src="{{ site.url }}/img/projects/active-lr/supervised.png" width="50%">
 
 Now that we have a baseline, let’s define the parts of active learning. 
 
