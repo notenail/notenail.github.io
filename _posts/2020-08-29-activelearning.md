@@ -8,7 +8,8 @@ categories: post
 tags: [Blog, Active Learning, Machine Learning, Deep Learning]
 ---
 
-I have given a loose introduction to active learning <here>. In this post, we’ll dig into the application of active learning in computer vision.
+
+I have given a loose introduction to active learning <a href="https://notenail.github.io/2020-08-21-activelearning/" target="_blank" rel="noopener noreferrer" style="color:blue">in my previous post.</a>. In this post, I’ll dig deeper into the application of active learning in computer vision.
 
 To understand the problem better, imagine you are asked to prepare a model for classification on a very specific dataset D in which a majority of the samples don’t have labels. This is typically the case in computer vision and NLP application of machine learning where we have to make idiosyncratic models on a dataset that often don’t have labels. 
 
