@@ -151,7 +151,7 @@ for i in tqdm_notebook(range(200)):
         round(hist.history['val_accuracy'][-1],3),round(testing_accuracy,3)))
     X_reserve,y_reserve,X_pool,y_pool = get_ambigious_labels(model, X_reserve, y_reserve, X_pool, y_pool,new_samples=50)
 ```
-Observation: 
+Observations: 
  - During supervised learning, we used 42210 samples to achieve 88.1 % accuracy on our test-set.
  - Even in the initial phase, we achieved an 82.4% accuracy with just 18960 samples using active learning.<img src="{{ site.url }}/img/projects/active-lr/initial.jpg" width="100%">
  
