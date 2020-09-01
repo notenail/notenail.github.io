@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The promise of active learning (part 1)"
+title: "Exploring active learning  (Part 1)"
 description: Exploring active learning.
 # image: /files/blog/gibbs/front.jpg
 date: 2020-08-21
