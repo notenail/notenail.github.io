@@ -22,7 +22,7 @@ Let’s assume that we have a small fraction (Df) of the dataset already labeled
  - Train a supervised model on the Df
  - Generate the N most promising candidates Dc from the pool of unlabeled dataset  
  - Integrate the dataset and labels:= Df= Df+Dc 
- - Repeat until a good enough model <a href="<https://machinelearningmastery.com/how-to-know-if-your-machine-learning-model-has-good-performance/>" target="_blank" rel="noopener noreferrer" style="color:blue">good enough model</a> is trained.
+ - Repeat until a good enough model <a href="https://machinelearningmastery.com/how-to-know-if-your-machine-learning-model-has-good-performance/" target="_blank" rel="noopener noreferrer" style="color:blue">good enough model</a> is trained.
 
 
 
