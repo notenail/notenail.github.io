@@ -73,7 +73,7 @@ X_test = X_test.reshape(10000, 28, 28, 1).astype('float32') / 255
 y_train = keras.utils.to_categorical(y_train, 10)
 y_test = keras.utils.to_categorical(y_test, 10)
 
-# for some reason the testset is not seem to be a representative of whole dataset, combining and restructuring
+# for some reason the testset is not a representative of the entire dataset, combining and re-splitting
 X = np.concatenate((X_train,X_test),axis=0)
 y = np.concatenate((y_train,y_test),axis=0)
 
