@@ -35,7 +35,7 @@ The first step is straight forward; just train the best model you can on the fra
  This method takes into account the difference between the highest probability and the second-highest probability. As in the above example, the margin in the first case would be 0.9-0.1=0.8 and 0.51-0.49=0.02.
 
 ### Entropy
- The entropy formula is applied to each instance and the instance with the largest value is queried. The formula is shown below.<img src="{{ site.url }}/img/projects/active-lr/entropy.png" width="100%">
+ The entropy formula is applied to each instance and the instance with the largest value is queried. The formula is shown below.<img src="{{ site.url }}/img/projects/active-lr/entropy.png" width="50%" hight="50%">
 
 
 
@@ -89,7 +89,7 @@ history = model.fit(x=X_train,y=y_train, epochs=epochs, validation_split=0.1,ver
 _,testing_accuracy = model.evaluate(X_test, y_test,verbose=False)
 
 ```
-<img src="{{ site.url }}/img/projects/active-lr/supervised.png" width="50%" hight="50%">
+<img src="{{ site.url }}/img/projects/active-lr/supervised.png" width="100%">
 
 Now that we have a baseline, let’s define the parts of active learning. 
 
@@ -132,8 +132,6 @@ def model_fit(X_pool,y_pool):
 
 
 Now, let’s assume that we have only a fraction of dataset labeled. Everytime we train a model, we will generate labels for the samples onto which the model is uncertain. Since in this particular case, the data is already a labeled and we are simulating the environment of active learning, we’ll just get the labels and integrate it to the initial training dataset.  
-
-
 
 
 ```
