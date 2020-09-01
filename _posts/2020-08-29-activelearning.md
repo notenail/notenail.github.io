@@ -35,7 +35,9 @@ The first step is straight forward; just train the best model you can on the fra
  This method takes into account the difference between the highest probability and the second-highest probability. As in the above example, the margin in the first case would be 0.9-0.1=0.8 and 0.51-0.49=0.02.
 
 ### Entropy
- The entropy formula is applied to each instance and the instance with the largest value is queried. The formula is shown below.<img src="{{ site.url }}/img/projects/active-lr/entropy.png" width="50%" hight="50%">
+ The entropy formula is applied to each instance and the instance with the largest value is queried. The formula is shown below.
+ 
+ <img src="{{ site.url }}/img/projects/active-lr/entropy.png" width="50%" hight="50%">
 
 
 
@@ -77,7 +79,7 @@ y = np.concatenate((y_train,y_test),axis=0)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 ```
-Notice that I have set apart 33% for dataset for testing intened for unbaised evaluation. We will never mix this subset of the dataset with anything.
+Notice that I have set apart 33% of the dataset as test-set intened for unbaised evaluation. We will never mix this subset of the dataset with anything.
 
 
 
