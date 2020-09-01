@@ -28,20 +28,20 @@ Let’s assume that we have a small fraction (Df) of the dataset already labeled
 
 The first step is straight forward; just train the best model you can on the fraction of the dataset that’s labeled. In the next step, we generate predictions on the pool of unlabeled data points. From these predictions, we can find out the subset of predictions in which the model is most uncertain. There are mainly three ways to do this:
 
-### Least confidence
- It is also referred to as uncertainty measurement. Basically, if the model is making a binary classification, the variance between the predicted probabilities tells us about how confident the model is on that sample. In case the model has strong confidence, the probabilities would look like ~ [0.9,0.1] while in the case of low confidence, the probabilities would look like ~ [0.51,0.49]. 
+ - #### Least confidence
+   It is also referred  as uncertainty measurement. Basically, if the model is making a binary classification, the variance between the predicted probabilities tells us about how confident the model is on that sample. In case the model has strong confidence, the probabilities would look like ~ [0.9,0.1] while in the case of low confidence, the probabilities would look like ~ [0.51,0.49]. 
 
-### Margin sampling
- This method takes into account the difference between the highest probability and the second-highest probability. As in the above example, the margin in the first case would be 0.9-0.1=0.8 and 0.51-0.49=0.02.
+ - #### Margin sampling
+   This method takes into account the difference between the highest probability and the second-highest probability. As in the above example, the margin in the first case would be 0.9-0.1=0.8 and 0.51-0.49=0.02.
 
-### Entropy
- The entropy formula is applied to each instance and the instance with the largest value is queried. The formula is shown below.
+ - #### Entropy
+  The entropy formula is applied to each instance and the instance with the largest value is queried. The formula is shown below-
  
  <img src="{{ site.url }}/img/projects/active-lr/entropy.png" width="50%" hight="50%">
 
 
 
-Lastly, we get the most promising samples labeled, we integrate it into preexisting labels, and repeat the entire process. 
+Lastly, as we get the most promising samples labeled, we integrate it into preexisting labels, and repeat the entire process. 
 
 Let’s see it in action. Consider the MNIST dataset. First, we are going to train a supervised model that would utilize the entirety of labels to get a reference performance.
 
