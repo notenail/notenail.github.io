@@ -43,7 +43,9 @@ models = [clf_ovo, clf_Linear]
 models = [clf.fit(X, Y) for clf in models]
 ```
 
-The fitting of the models is shown below.<img src="{{ site.url }}/img/projects/active-lr/supervised_svms.png" width="100%">
+The fitting of the models is shown below.
+
+<img src="{{ site.url }}/img/projects/active-lr/supervised_svms.png" width="100%">
 
 ## Active learning
 
