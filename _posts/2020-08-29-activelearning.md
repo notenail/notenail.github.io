@@ -9,7 +9,7 @@ tags: [Blog, Active Learning, Machine Learning, Deep Learning]
 ---
 
 
-I have given a loose introduction to active learning <a href="https://notenail.github.io/2020-08-21-activelearning/" target="_blank" rel="noopener noreferrer" style="color:blue">in my previous post.</a>. In this post, I’ll dig deeper into the application of active learning in computer vision.
+I have given a loose introduction to active learning <a href="https://notenail.github.io/2020-08-21-activelearning/" target="_blank" rel="noopener noreferrer" style="color:blue"> in my previous post.</a>. In this post, I’ll dig deeper into the application of active learning in computer vision.
 
 To understand the problem better, imagine you are asked to prepare a model for classification on a very specific dataset D in which a majority of the samples don’t have labels. This is typically the case in computer vision and NLP application of machine learning where we have to make idiosyncratic models on a dataset that often don’t have labels. 
 
@@ -150,9 +150,9 @@ for i in tqdm_notebook(range(200)):
 ```
 Observation: 
  - During supervised learning, we used 42210 samples to achieve 88.1 % accuracy on our test-set.
- - Even in the initial phase, we achieved an 82.4% accuracy with just 18960 samples using active learning.<img src="{{ site.url }}/img/projects/active-lr/initial.png" width="100%">
+ - Even in the initial phase, we achieved an 82.4% accuracy with just 18960 samples using active learning.<img src="{{ site.url }}/img/projects/active-lr/initial.jpg" width="100%">
  
- - Later, with 30360 samples, we achieved 87.4% test-accuracy with active learning. <img src="{{ site.url }}/img/projects/active-lr/later.png" width="100%">
+ - Later, with 30360 samples, we achieved 87.4% test-accuracy with active learning. <img src="{{ site.url }}/img/projects/active-lr/later.jpg" width="100%">
 
 
 The above experiment validates the efficacy of active learning. It is a semi-supervised way of learning that requires a lesser amount of dataset as compared to supervised learning. You can find my work at <a href="https://www.kaggle.com/nikhilpandey360/active-learning-on-mnist-using-entropy" target="_blank" rel="noopener noreferrer" style="color:blue">kaggle.</a>
