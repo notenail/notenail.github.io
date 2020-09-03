@@ -22,7 +22,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-graduation-cap about-icon"></span>
-  I did my B.Tech from <a href="https://www.ggu.ac.in/" target="_blank" rel="noopener noreferrer">School of studies in engineering and technologies, GGU(Central University), Chattisgarh</a> in <a href="http://www.ggu.ac.in/schools/dept%20of%20english/dept_of_ComputerEngg_courses.html" target="_blank" rel="noopener noreferrer">Computer Science and Engineering Department(CSE)</a>. My thesis was on Noval methods of quality grading using computer vision and deep learning.
+  I did my B.Tech from <a href="https://www.ggu.ac.in/" target="_blank" rel="noopener noreferrer">School of studies in engineering and technologies, GGU(Central University), Chhattisgarh</a> in <a href="http://www.ggu.ac.in/schools/dept%20of%20english/dept_of_ComputerEngg_courses.html" target="_blank" rel="noopener noreferrer">Computer Science and Engineering Department(CSE)</a>. My thesis was on Novel methods of quality grading using computer vision and deep learning.
 </p>
 
 <p class="about-text">
