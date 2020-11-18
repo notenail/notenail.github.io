@@ -68,21 +68,8 @@ author:
 social-network-links:
   rss: true
   email: "nikhilpandey360@gmail.com"
-#  facebook: deanattali
   github: notenail
-#  twitter: daattali
-#  reddit: yourname
   linkedin: nikhil-pandey
-#  xing: yourname
-  # stackoverflow: "6430403/rishabh-gupta"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
 
 # Select which share links to show in posts
 share-links-active:
@@ -92,7 +79,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "notenail.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "nikheelpandey.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -117,7 +104,7 @@ gtag: "UA-132428073-2"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "notenail-github-io"
+disqus: "nikheel-github-io"
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
 
