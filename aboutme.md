@@ -10,6 +10,7 @@ css: "/css/aboutme.css"
   <span class="fa fa-star about-icon"></span>
   My name is <b>Nikhil Pandey</b>. 
 </p> 
+
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
   Download my CV here (<a href="/files/cv.pdf">pdf</a>).
@@ -27,7 +28,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-code about-icon"></span>
-  I am interested in Computer vision, machine learning, and automation. I am exploring differnt techniques by which we can mitigate the short-comings of supervised learning. I am especially interested in real-time inference generation and active learning.
+  I am interested in Computer vision, machine learning, and automation. I am exploring differnt techniques by which we can mitigate the short-comings of supervised learning. I am especially interested in real-time inference generation and active learning. Download my research statement from here (<a href="/files/rs.pdf">pdf</a>).
 </p>
 
 <p class="about-text">
