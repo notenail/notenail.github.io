@@ -8,19 +8,19 @@ categories: post
 tags: [Blog, Self-training, Computer Vision, Noisy Student]
 ---
 
-One of the best papers I came across in 2020 was the Google Brain team’s <a href="https://arxiv.org/pdf/1911.04252.pdf" target="_blank" rel="noopener noreferrer" style="color:blue"> ***Self-training with Noisy Student***.</a> It is a semi-supervised technique that works well even when we have a sufficient amount of labeled data. So much that it beat the contemporary SOTA by a whole 2% gain on ImageNet-A top-1% accuracy while increasing the robustness of a classification model at the same time. This paper was arguably the best lockdown read.
+One of the best papers I came across in 2020 was the Google Brain team’s <a href="https://arxiv.org/pdf/1911.04252.pdf" target="_blank" rel="noopener noreferrer" style="color:black"> **Self-training with Noisy Student**.</a> It is a semi-supervised technique that works well even when we have a sufficient amount of labeled data. So much so that it beat the contemporary SOTA by a whole 2% gain on ImageNet-A top-1% accuracy while increasing the robustness of a classification model at the same time. This paper was arguably the best lockdown read.
 
 ## Self-training
 
 Self-training is a type of semi-supervised learning. First, let’s clarify what’s the main difference between semi-supervised and supervised learning. In supervised learning, we train the model on the entire dataset (train-test-valid) and the dataset is labeled in its entirety. While on the other hand, in semi-supervised learning, we train a model on the labels of a subset of the dataset. This model is then used to label the remainder of the dataset since the predictions are likely to be better than random. This process is repeated until we get a model that converges.
 
-Generally, semi-supervised datasets are far more ubiquitous as labeling the entire dataset that contains millions of images is mundane and often an expensive job.
+Generally, semi-supervised datasets are far more ubiquitous since labeling the entire dataset that contains millions of images is a mundane and often an expensive job.
 
 Self-training is a subset of semi-supervised learning and works in the following way:
 - **Step 1**: Split the labeled data instances into train and test sets. 
 - **Step 2**: Train a model using this data.
 - **Step 3a**: Use the trained classifier to label (pseudo-labels) the unlabeled instances.  
-- **Step 3b**: Weight the pseudo-labels by model confidence and keep the best ones. 
+- **Step 3b**: Weigh the pseudo-labels by model confidence and keep the best ones. 
 - **Step 4**:   Concatenate the pseudo-labels with the labeled dataset and re-train a new classifier model. (Typically the architecture of the new model isn’t the same as the previous one)
 - **Step 5**: Repeat Step 3 after evaluating classifier performance with a suitable metric. Stop if the model *converges*. 
 
@@ -30,14 +30,14 @@ Self-training can be viewed as a teacher-student technique where once a model is
 ## Noisy Student
 
 The main contribution of the paper from Google Brain is that it adds noise while training the student model. The addition of noise is either done at the input i.e. data augmentation or the model level i.e. dropout and stochastic noise.    
-Noise, when applied to the unlabeled data, ***enforces invariances in the decision function*** of the model. For example, data augmentation forces the student to ensure prediction consistency on the augmented version of images. The teacher labels clean and high-quality images while the student is required to reproduce these labels on a highly augmented version of the original images. 
+Noise, when applied to the unlabeled data, **enforces invariances in the decision function** of the model. For example, data augmentation forces the student to ensure prediction consistency on the augmented version of images. The teacher labels clean and high-quality images while the student is required to reproduce these labels on a highly augmented version of the original images. 
 
-When the noise is applied to the teacher model in the form of dropout and stochastic depth, ***the teacher model behaves as an ensemble model*** while producing pseudo-labels. Now the student, ***a single model***, has to master or even outclass ***an ensemble model***.
+When the noise is applied to the teacher model in the form of dropout and stochastic depth, **the teacher model behaves as an ensemble model** while producing pseudo-labels. Now the student, **a single model**, has to master or even outclass **an ensemble model**.
 
     
 Two things are important for the noisy student:
-- The architecture can be the same for both the teacher and the student but since the student is trained on a much bigger dataset, ***the model capacity of the student has to be greater than the teacher***. 
-- ***The student works well on a balanced dataset*** i.e. the number of pseudo-labels in each class remains roughly the same. In my opinion, this could be idiosyncratic to the ImageNet dataset. 
+- The architecture can be the same for both the teacher and the student but since the student is trained on a much bigger dataset, **the model capacity of the student has to be greater than the teacher**. 
+- **The student works well on a balanced dataset** i.e. the number of pseudo-labels in each class remains roughly the same. In my opinion, this could be idiosyncratic to the ImageNet dataset. 
 
 <img src="{{ site.url }}/img/projects/noisy_student/algo.png" width="100%" hight="100%"> 
 
