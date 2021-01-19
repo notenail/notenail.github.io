@@ -8,7 +8,7 @@ categories: post
 tags: [Blog, Self-training, Computer Vision, Noisy Student]
 ---
 
-One of the best papers I came across in 2020 was the Google Brain team’s <a href="https://arxiv.org/pdf/1911.04252.pdf" target="_blank" rel="noopener noreferrer" style="color:black"> **Self-training with Noisy Student**.</a> It is a semi-supervised technique that works well even when we have a sufficient amount of labeled data. So much so that it beat the contemporary SOTA by a whole 2% gain on ImageNet-A top-1% accuracy while increasing the robustness of a classification model at the same time. This paper was arguably the best lockdown read.
+One of the best papers I came across in 2020 was the Google Brain team’s <a href="https://arxiv.org/pdf/1911.04252.pdf" target="_blank" rel="noopener noreferrer" style="color:black"> **Self-training with Noisy Student**.</a> It is a semi-supervised technique that works well when we have an insufficient amount of labeled data. So much so that it beat the contemporary SOTA by a whole 2% gain on ImageNet-A top-1% accuracy while increasing the robustness of a classification model at the same time. This paper was arguably the best lockdown read.
 
 ## Self-training
 
