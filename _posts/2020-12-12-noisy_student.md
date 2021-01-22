@@ -5,6 +5,8 @@ description: Paper summary on Noisy Student
 # image: /files/blog/gibbs/front.jpg
 date: 2020-12-12
 categories: post
+nav-short: true
+show-avatar: false
 tags: [Blog, Self-training, Computer Vision, Noisy Student, Self-Supervised Learning, Semi-supervised learning]
 ---
 

@@ -5,6 +5,8 @@ description: Exploring active learning.
 # image: /files/blog/gibbs/front.jpg
 date: 2020-08-29
 categories: post
+nav-short: true
+show-avatar: false
 tags: [Blog, Active Learning, Computer Vision, Deep Learning]
 ---
 
