@@ -14,9 +14,9 @@ tags: [Blog, Image-Segmentation, Computer Vision]
 The object detection and classification task make the most buzz in the break-through of machine learning. But one of the most important tasks in computer vision is segmentation. In this blog, I’ll be detailing the application of segmentation-related tasks and in my next blog, I'll introduce you to an instrumental model that revolutionalized the learning-based segmentation methods.
 
 ## Segmentation
-An image is truly worth a thousand worth. Think about it. A 28x28 image just has 784 data points. However, this image is quite sufficient to express any event that you can think of. That beautiful sunset, the picturesque mountains, the birth of your first child, and so on.  The things that can be expressed with these measly 784 data points in infinite. But as marvelous as the information capacity of an image is, it poses a challenge in image processing. The act of interpretation is inherently human. Computers cannot do this task very well. 
+An image is truly worth a thousand worth. Think about it. A 28x28 image has just 784 data points. However, this image is quite sufficient to express any event that you can think of. That beautiful sunset, the picturesque mountains, the birth of your first child, and so on.  The things that can be expressed with these measly 784 data points in infinite. But as marvelous as the information capacity of an image is, it poses a challenge in image processing. The act of interpretation is inherently human. Computers cannot do this task very well. 
 
-If we want the computers to make some deterministic sense of these images, we have to simplify the images. **Segmentation refers to the act of creating segments or groping pixels using some meaningful criteria**.     
+If we want the computers to make some deterministic sense of images, we have to simplify the images. Simplification brings us to segmentation. **Image segmentation refers to the act of creating segments or groping pixels using some meaningful criteria**.     
 
 <!-- [put image here] -->
 <!-- img/projects/segmentation/img_seg.jpeg -->
