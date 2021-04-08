@@ -133,6 +133,7 @@ The performace of U-Net can be seen in the image below.
 
 <img src="{{ site.url }}/img/projects/segmentation/__results___24_0.png" width="100%" hight="100%"> 
 
+
 <a href="https://www.kaggle.com/nikhilpandey360/lung-segmentation-from-chest-x-ray-dataset" target="_blank" rel="noopener noreferrer" style="color:blue"> Checkout the source for a keras implementation of U-Net</a>
 
 
