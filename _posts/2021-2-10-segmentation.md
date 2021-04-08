@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction to  Segmentation"
+title: "Introduction to  Image Segmentation"
 description: A brief intro to image segmenation
 # image: /files/blog/gibbs/front.jpg
 date: 2021-2-12
@@ -38,7 +38,7 @@ If you merge object detection with semantic segmentation, you get instance segme
 
 <img src="{{ site.url }}/img/projects/segmentation/instance_seg.png" width="100%" hight="100%"> 
 
-The rectangles around the balloons are essentially what you get if you are using object detection but the masks represented by various colors are the output of a typical instance segmentation model. 
+The rectangles around the balloons are essentially what you get if you are using object detection but the masks represented by various colors are the output of an instance segmentation model. 
 
 The application of instance segmentation is typically when we have multiple instance of same object in an image and we want to analyse each of them separately. 
 
