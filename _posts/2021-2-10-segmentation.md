@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to  Segmentation"
 description: A brief intro to image segmenation
 # image: /files/blog/gibbs/front.jpg
-date: 2021-2-15
+date: 2021-2-12
 categories: post
 nav-short: true
 show-avatar: false
