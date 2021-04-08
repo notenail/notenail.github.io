@@ -129,12 +129,19 @@ In the first ```for``` loop, we pass the input through the encoder. We also appe
 The second ```for``` loop shows the data flow for the decoder. We pass the output of the bottleneck output to the first layer of the first block of the decoder. We use the output from the first layer of the decoder block, concate it with the corresponding output in the skip connection and pass it to the second layer in the block. We do this for each block of the decoder. The final output of the decoder is passed through the final layer that recreates a version of the image. It could be the image itself or the mask of the image. In the latter case, it would be performing a semantic segmentation.
 
 
+The performace of U-Net can be seen in the image below.
+
+<img src="{{ site.url }}/img/projects/segmentation/__results___24_0.png" width="100%" hight="100%"> 
+
+<a href="https://www.kaggle.com/nikhilpandey360/lung-segmentation-from-chest-x-ray-dataset" target="_blank" rel="noopener noreferrer" style="color:blue"> Checkout the source for a keras implementation of U-Net</a>
 
 
 ### Training a U-Net
 
 U-Net is trained using Intersection-over-union loss or dice loss. We calculate the dice score/loss using the output mask and the annotated mask.  I have used ```nn.BCEWithLogitsLoss()``` as the loss function and used adam optimizer.  You can have a look at the training file <a href="https://github.com/nikheelpandey/collections/blob/main/SemanticSeg/unet/trainer.py" target="_blank" rel="noopener noreferrer" style="color:blue"> here.</a>
  
+
+
 
 One thing to note is that we have only specified input and output channels. This is because due to the presence of the skip connection, the model becomes symmetric. You can have an input shape as ``hxwx3``  as long as ```h=w``` and ``h%8 = 0``. 
 
