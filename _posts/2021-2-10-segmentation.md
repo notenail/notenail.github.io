@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Image Segmentation"
+title: "Introduction to  Segmentation"
 description: A brief intro to image segmenation
 # image: /files/blog/gibbs/front.jpg
 date: 2021-2-10
