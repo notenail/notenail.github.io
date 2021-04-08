@@ -11,7 +11,7 @@ tags: [Blog, Image-Segmentation, Computer Vision]
 ---
 
 
-The object detection and classification task make the most buzz in the break-through of machine learning. But one of the most important tasks in computer vision is segmentation. In this blog, I’ll be detailing the application of segmentation-related tasks and in my next blog, I'll introduce you to an instrumental model that revolutionalized the learning-based segmentation methods.
+The object detection and classification task make the most buzz in the field of computer vision. But one of the most important tasks in computer vision is segmentation. In this blog, I’ll be detailing the application of segmentation-related tasks and in my next blog, I'll introduce you to an instrumental model that revolutionalized the learning-based segmentation methods.
 
 ## Segmentation
 An image is truly worth a thousand worth. Think about it. A 28x28 image has just 784 data points. However, this image is quite sufficient to express any event that you can think of. That beautiful sunset, the picturesque mountains, the birth of your first child, and so on.  The things that can be expressed with these measly 784 data points in infinite. But as marvelous as the information capacity of an image is, it poses a challenge in image processing. The act of interpretation is inherently human. Computers cannot do this task very well. 
@@ -30,6 +30,7 @@ The task of semantic segmentation is to group pixels using a class label, i.e., 
 
 <img src="{{ site.url }}/img/projects/segmentation/semantic_seg.jpg" width="100%" hight="100%"> 
 
+One of the application of semantic segmentation is to detect and measure the presence of an object. It can be used to separate an object from its background.    
 
 
 ## Instance Segmentation
@@ -38,5 +39,7 @@ If you merge object detection with semantic segmentation, you get instance segme
 <img src="{{ site.url }}/img/projects/segmentation/instance_seg.png" width="100%" hight="100%"> 
 
 The rectangles around the balloons are essentially what you get if you are using object detection but the masks represented by various colors are the output of a typical instance segmentation model. 
+
+The application of instance segmentation is typically when we have multiple instance of same object in an image and we want to analyse each of them separately. 
 
 Alright, you now know different types of segmentation. In the next post, we are going to have a detailed look at the architecture of the legendary UNet.  
