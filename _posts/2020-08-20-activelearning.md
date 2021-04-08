@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploring active learning  (Part 1)"
+title: "Exploring active learning - I"
 description: Exploring active learning.
 # image: /files/blog/gibbs/front.jpg
 date: 2020-08-21
