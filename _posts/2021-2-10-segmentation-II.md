@@ -10,7 +10,7 @@ show-avatar: false
 tags: [Blog, Image-Segmentation, Computer Vision]
 ---
 
-We looked at the process of image segmentation and its different types in my previous blog. In this post, we are going to take a deeper look at the architecture of U-Net. We will also discuss the PyTorch-based code for U-Net. The complete code can be found <a href="https://github.com/nikheelpandey/collections/tree/main/SemanticSeg/unet/" target="_blank" rel="noopener noreferrer" style="color:blue"> at github.</a>.
+We looked at the process of image segmentation and its different types in my previous blog. In this post, we are going to take a deeper look at the architecture of U-Net. We will also discuss the PyTorch-based code for U-Net. The complete code can be found <a href="https://github.com/nikheelpandey/collections/tree/main/SemanticSeg/unet/" target="_blank" rel="noopener noreferrer" style="color:blue"> at github.</a>
 
 ## U-Net 
 
