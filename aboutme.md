@@ -13,12 +13,12 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
-  Download my CV here (<a href="/files/cv.pdf">pdf</a>).
+  Have a look at my CV <a href="/files/cv.pdf">here</a>.
 </p>
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I joined <a href="https://www.occipitaltech.com/" target="_blank" rel="noopener noreferrer">Occipital Technologies</a> as a Computer Vision Engineer in May 2018. Currently, I am the CTO of the start-up, leading the development in automation in the QC process. We use computer vision and machine learning to remove the human baises and subjectivity. 
+  I joined <a href="https://www.occipitaltech.com/" target="_blank" rel="noopener noreferrer">Occipital Technologies</a> in 2018 and worked till 2021 as the CTO. Handled the responsibilities of research, development, and deployment of optical sorting machines. Learned efficient utilization of computation over edge inferencing. The most unique experience was the life cycle of products in an early-stage startup. Loved my time at the start-up! 
 </p>
 
 <p class="about-text">
